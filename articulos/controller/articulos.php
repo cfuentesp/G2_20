@@ -12,7 +12,7 @@
     header("Content-Type: application/json");
 
     require_once("../config/conexion.php");
-    require_once("../models/articulos.php");
+    require_once("../articulos/models/articulos.php");
     $articulos = new Articulos();
 
     $body = json_decode(file_get_contents("php://input"), true);
