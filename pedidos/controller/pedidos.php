@@ -14,7 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     require_once("../../config/conexion.php");
     require_once("../../pedidos/models/Pedidos.php");
     $pedidos = new Pedidos();
-
     $body = json_decode(file_get_contents("php://input"), true);
 
     switch($_GET["op"]){
